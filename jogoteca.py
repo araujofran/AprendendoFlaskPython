@@ -1,4 +1,10 @@
 from flask import Flask
 
-from pathlib import Path
+app = Flask(__name__)
 
+@app.route('/inicio')
+
+def ola():
+    return 'Olá Mundo!'
+
+app.run()
